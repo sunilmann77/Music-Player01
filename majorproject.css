@@ -1,0 +1,490 @@
+.body{
+    background-color: #0c1126;
+    overflow-y: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+.Container-main{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.container-1{
+    width: 74%;
+    max-height:100vh;
+    max-width: auto;
+    display: inline-block;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+}
+.container-2{
+    width: 24%;
+    float: right;
+    overflow-y: auto;
+    max-height:100vh;
+    max-width: 100vh;
+    display: inline-block;
+    float: right;
+}
+
+.Homebar{
+    background-color:#0c1126;
+    height: 70px;
+    width: max-content;
+    margin-top: -10px;
+}
+.Homebar img{
+    margin-top: -10px;
+}
+
+.carousel:hover{
+    transform: scale(1.2);
+}
+
+.heart-icon{
+  margin-left: 30%;
+}
+
+.play:hover{
+    transform: scale(1);
+    background-color:#0c1126;
+    color: white;
+    border: solid white 0.5px;
+}
+
+.play-bt{
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .play-bt:hover{
+   color: red;
+   margin-top: -10px;
+}
+
+.play-icon{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   margin-top: 15%;
+   margin-left: 15%;
+  } 
+
+   .play-icon-2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 260px;
+    height: 30px;
+    opacity: 0%;
+    margin-top: 10px;
+   }
+   .play-icon-2:hover{
+    opacity: 10%;
+    z-index: 5;
+   }
+   .Artist{
+    margin-right: 20px;
+   }
+   .Artist:hover {
+    transform: scale(1.1);
+    opacity: 60%;
+   }
+
+   .container-Album{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: rgb(46, 46, 146);
+        justify-content: space-around;
+   }
+
+   .Stations{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: wheat;
+    margin-left: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    bottom: 40%;
+
+   }
+/* Conatiner English */
+   .container-English{
+    margin-left: 20px;
+   }
+   .Release-date{
+    color: dimgray;
+    font-weight: bolder;
+    margin-top: -20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+   }
+   /* Containr Party */
+
+   .container-Party{
+    margin-top: 20px;
+    height: 200px;
+    width: 1050px;
+   }
+.Mood{
+    display:block;
+    justify-content: space-between;
+    margin: 15px;;
+}
+   .Mood:hover{
+    padding-top: 20px;
+    transform: scale(1.2);
+    margin-bottom: 30px;
+    justify-content: space-around;
+    opacity: 50%;
+    box-shadow:white;
+   }
+   /* Album Workout */
+   .Album:hover{
+    transform: scale(1.1);
+    opacity: 50%;
+    border:solid white 5px;
+    border-radius: 50%;
+
+   }
+   .music-bt{
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+   }   
+
+.music-bt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -52px;
+    z-index: 2;
+}
+.div-2{
+    height: 100px;
+    width: 100%;
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  padding: 6px 40px 8px 10px;
+  background-color:none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 70%;
+  color: white;
+  font-weight: 700;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-button:hover {
+  background-color: #eeeeee;
+  color: #0c1126;
+}
+
+
+.dd-input {
+  display: none;
+  color: white;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+  z-index: 100;
+  font-weight: 600;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* dropdown buton */
+
+/* release  */
+/* Dropdown */
+
+.dropdown-1 {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button-1 {
+  display: inline-block;
+  padding: 4px 10px 4px 10px;
+  background-color:none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 70%;
+  color:white;
+  font-weight: 700;
+}
+
+
+.dd-button-1:hover {
+  background-color:none;
+  color: white;
+}
+
+
+.dd-input-1 {
+  display: none;
+  color: white;
+}
+
+.dd-menu-1 {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color:white;
+  list-style-type: none;
+  z-index: 100;
+  font-weight: 600;
+  color: black;
+}
+
+.dd-input-1 + .dd-menu-1 {
+  display: none;
+} 
+
+.dd-input-1:checked + .dd-menu-1 {
+  display: block;
+} 
+
+.dd-menu-1 li {
+  padding: 10px 20px;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.dd-menu-1 li:hover {
+  background-color:  #0c1126;
+  color: white;
+}
+
+.dd-menu-1 li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu-1 li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/*playmenu  */
+
+
+
+  /* Html Page Major_projects_Music_Window */
+  .music-top-bg{
+    background-image: linear-gradient(to right,#100633, #15033f, #1a0442, #150844);
+    opacity:85%;
+    color: white;
+  }
+  .music-bottom{
+    background-color: red;
+    height: 60px;
+    width: auto;
+  }
+
+
+  .followers-bt{
+    display: flex;
+    margin-left: 75%;
+    margin-top: -34%;
+  }
+
+  .play-all-btn {
+    color: #F7F1FB;
+    background-image: linear-gradient(to right, #3725B1, #4126B3, #522CB8, #6F33C2, #7B36C7, #973CD0, #A641D7, #B846DD, #C148DF);
+    border: 0;
+    width: 6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+/*  Html Page Major_projects_Music_Window-footer */
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color:rgb(40,39,41);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+  
+}
+
+#footer-song-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+.music-footer{
+  opacity:0%;
+  height: 50px;
+  width: 200px;
+  padding-top: 20px;
+  object-fit: fill;
+  padding-right: 20px;
+}
+
+#footer-song-info>div {
+  margin: 1vh;
+}
+
+#footer-song-image {
+  height: 4rem;
+  width: 4rem;
+  margin: 1vh;
+  background: url("https://p16.resso.me/img/tos-alisg-i-0000/2683237ad7e94b9588b4d2a58dd17a95~c5_1000x1000.jpg") center no-repeat;
+  background-size: contain;
+}
+
+#footer-song-name {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subtitle {
+  color: #C0C0C0;
+  font-size: 0.9rem;
+  margin: 0.1rem;
+}
+
+
+/*Player Controls*/
+
+
+/* Pause, Next, Shuffle &other Icons and Slider Styling*/
+#player {
+  width: 40%;
+  min-width: 200px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player>div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player-control {
+  width: 50%;
+}
+
+#player-slider-container {
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+
+/*Player Extras*/
+
+.player-extras {
+  display: flex;
+  width: 20%;
+  min-width: 115px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.volume-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#volume-slider {
+  width: 80%;
+}
